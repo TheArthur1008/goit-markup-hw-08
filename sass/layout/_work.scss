@@ -1,0 +1,45 @@
+.section-work {
+    padding-top: 47px;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.work {
+    display: flex;
+    gap: 30px;
+}
+
+.work-action {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 370px;
+        height: 70px;
+        bottom: 0;
+        left: 0;
+
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}
+
+.work-action__text {
+    position: absolute;
+    width: 205px;
+    height: 16px;
+    left: 50%;
+    top: 251px;
+    transform: translate(-50%, 0);
+
+    margin: 0;
+    padding: 0;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+}

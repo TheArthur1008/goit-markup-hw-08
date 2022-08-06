@@ -1,0 +1,82 @@
+.section-hero {
+    max-width: 1920px;
+    max-height: 600px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../../images/hero/mobile/bagraund-sm.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../../images/hero/mobile/bagraund-sm@2x.jpg");
+        }
+
+    @media screen and ( min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../../images/hero/tablet/bagraund-md.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../../images/hero/tablet/bagraund-md@2x.jpg");
+        }   
+    } 
+
+    @media screen and ( min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../../images/hero/desctop/bagraund-lg.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../../images/hero/desctop/bagraund-lg@2x.jpg");
+        }    
+    }   
+    }
+
+
+.section-hero__container {
+    max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 693px;
+        padding-top: 200px;
+        padding-bottom: 200px;   
+    }
+
+}
+
+.section-hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: var(--primary-white-color);
+
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 1.65;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+    
+}
