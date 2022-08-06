@@ -8,11 +8,9 @@
 }
 
 .clients__list {
+    width: calc((100% - 30px) / 2);
     height: 92px;
     border: 0;
-    @media screen and (max-width: 767px) {
-        width: 210px;   
-    }
     @media screen and (min-width: 768px) {
         width: 226px;   
     }
