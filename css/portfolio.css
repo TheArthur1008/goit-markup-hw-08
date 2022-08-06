@@ -575,4 +575,194 @@ ul {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.88;
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  min-height: 580px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 4px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
+.button-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.button-close:hover, .button-close:focus {
+  fill: var(--accent-color);
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--primary-text-color);
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 370px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .form-modal {
+    width: 450px;
+  }
+}
+
+.form-modal__label {
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-align: start;
+  color: var(--title-text-color);
+}
+
+.form-modal__input {
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+.form-modal__input:focus, .form-modal__input:hover {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.form-modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: all 0.2s ease-out;
+}
+.form-modal__input:focus ~ .form-modal__icon, .form-modal__input:hover ~ .form-modal__icon {
+  fill: var(--accent-color);
+}
+
+.form-modal__textarea {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+.form-modal__textarea:hover, .form-modal__textarea:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+.form-modal__textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 425px;
+}
+
+.modal-checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin-right: 7px;
+}
+
+.modal-checkbox__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.modal-checkbox__input:checked + .modal-checkbox__icon {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-image: url("../images/vector.svg");
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-out;
+}
+
+.modal-checkbox__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  margin-right: 2px;
+  color: var(--title-text-color);
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.modal-checkbox__link {
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__link {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }/*# sourceMappingURL=portfolio.css.map */
