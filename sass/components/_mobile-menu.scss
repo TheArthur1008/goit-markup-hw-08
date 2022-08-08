@@ -70,7 +70,14 @@
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
+
     color: var(--primary-text-color);
+    transition: all 0.2s ease-out;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .mobile-menu__link_nav--active {
@@ -95,6 +102,12 @@
     letter-spacing: 0.02em;
 
     color: var(--accent-color);
+    transition: all 0.2s ease-out;
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+}
 }
 
 .mobile-menu__link_contacts--mail {
@@ -105,6 +118,12 @@
     letter-spacing: 0.02em;
 
     color: var(--title-text-color);
+    transition: all 0.2s ease-out;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .mobile-menu__list_soc {
@@ -130,5 +149,10 @@
     letter-spacing: 0.02em;
 
     color: var(--accent-color);
-}
+    transition: all 0.2s ease-out;
 
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+}
+}
