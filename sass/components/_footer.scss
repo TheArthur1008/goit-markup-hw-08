@@ -18,9 +18,10 @@
 
 .footer-container {
     @media screen and (min-width: 768px) {
-        justify-content: space-evenly;
+        justify-content: space-around;
         display: flex;
         align-items: baseline;
+        margin-bottom: 60px;
     }
 }
 
@@ -28,10 +29,6 @@
     display: block;
     margin-bottom: 20px;
     color: var(--primary-white-color);
-}
-
-.footer-adress {
-    margin-bottom: 60px;
 }
 
 .footer-adress__item:not(:last-child) {

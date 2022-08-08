@@ -143,13 +143,13 @@
 }
 
 .modal-checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
     max-width: 425px;
+    @media screen and (max-width: 1199px) {
+        text-align: start;
+    }
+    
 }
 
 .modal-checkbox__input {
@@ -170,7 +170,6 @@
     display: inline-block;
     width: 16px;
     height: 15px;
-    margin-right: 7px;
 
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
@@ -188,7 +187,6 @@
 }
 
 .modal-checkbox__text {
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     margin-right: 2px;
