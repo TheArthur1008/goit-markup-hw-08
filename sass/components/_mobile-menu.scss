@@ -108,6 +108,10 @@
     &:focus {
         background-color: #188ce8;
     }
+    @media screen and (max-width: 410px) {
+        font-size: 24px;
+        
+    }
 }
 
 .mobile-menu__contacts-link--mail {

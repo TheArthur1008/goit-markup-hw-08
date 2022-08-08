@@ -594,6 +594,11 @@ ul {
 .mobile-menu__contacts-link--phone:hover, .mobile-menu__contacts-link--phone:focus {
   background-color: #188ce8;
 }
+@media screen and (max-width: 410px) {
+  .mobile-menu__contacts-link--phone {
+    font-size: 24px;
+  }
+}
 
 .mobile-menu__contacts-link--mail {
   text-decoration: none;
