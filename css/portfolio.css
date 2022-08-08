@@ -620,9 +620,6 @@ ul {
   gap: 30px;
 }
 
-.page-job__item {
-  border: 1px solid #eeeeee;
-}
 @media screen and (min-width: 768px) {
   .page-job__item {
     width: calc((100% - 30px) / 2);
@@ -680,11 +677,16 @@ ul {
   opacity: 1;
 }
 
+.page-job__container {
+  padding: 20px 24px;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+}
+
 .page-job__title {
   margin-top: 0;
   margin-bottom: 4;
-  padding-top: 20px;
-  padding-left: 24px;
   color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
@@ -694,8 +696,6 @@ ul {
 .page-job__deckription {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 20px;
-  padding-left: 24px;
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.88;
