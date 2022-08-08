@@ -632,7 +632,9 @@ ul {
 }
 
 .page-job__link {
-  display: block;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   text-decoration: none;
   transition: all 0.2s ease-out;
 }
@@ -678,6 +680,7 @@ ul {
 }
 
 .page-job__container {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
