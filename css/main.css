@@ -865,6 +865,7 @@ ul {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   cursor: pointer;
+  vertical-align: middle;
 }
 .modal-checkbox__input:checked + .modal-checkbox__icon {
   border-color: transparent;
@@ -882,6 +883,7 @@ ul {
   margin-right: 2px;
   color: var(--title-text-color);
   cursor: pointer;
+  vertical-align: middle;
 }
 @media screen and (min-width: 1200px) {
   .modal-checkbox__text {
