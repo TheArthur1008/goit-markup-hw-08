@@ -589,10 +589,6 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  transition: all 0.2s ease-out;
-}
-.mobile-menu__contacts-link--phone:hover, .mobile-menu__contacts-link--phone:focus {
-  background-color: #188ce8;
 }
 @media screen and (max-width: 410px) {
   .mobile-menu__contacts-link--phone {
@@ -607,7 +603,6 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  transition: all 0.2s ease-out;
 }
 
 .mobile-menu__soc-list {
@@ -635,7 +630,6 @@ ul {
   letter-spacing: 0.02em;
   padding: 0 5px;
   color: var(--accent-color);
-  transition: all 0.2s ease-out;
 }
 
 .page-job {
