@@ -590,9 +590,6 @@ ul {
   color: var(--title-text-color);
   transition: all 0.2s ease-out;
 }
-.mobile-menu__contacts-link--mail:hover, .mobile-menu__contacts-link--mail:focus {
-  color: var(--accent-color);
-}
 
 .mobile-menu__soc-list {
   display: flex;
@@ -627,7 +624,6 @@ ul {
 
 .section-hero {
   max-width: 1920px;
-  max-height: 600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -609,9 +609,6 @@ ul {
   color: var(--title-text-color);
   transition: all 0.2s ease-out;
 }
-.mobile-menu__contacts-link--mail:hover, .mobile-menu__contacts-link--mail:focus {
-  color: var(--accent-color);
-}
 
 .mobile-menu__soc-list {
   display: flex;

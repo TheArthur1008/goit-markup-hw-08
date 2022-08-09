@@ -124,10 +124,6 @@
     color: var(--title-text-color);
     transition: all 0.2s ease-out;
 
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
 }
 
 .mobile-menu__soc-list {
