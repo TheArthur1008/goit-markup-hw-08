@@ -637,9 +637,6 @@ ul {
   color: var(--accent-color);
   transition: all 0.2s ease-out;
 }
-.mobile-menu__soc-link:hover, .mobile-menu__soc-link:focus {
-  background-color: #188ce8;
-}
 
 .page-job {
   display: flex;
