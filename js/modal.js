@@ -29,6 +29,9 @@
   }
 
   function onEscapePress(event) {
+    if (event.code === 'Escape') {
     closeModal();
+  }
+    
   }
 })();
