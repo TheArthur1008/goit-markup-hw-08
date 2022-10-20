@@ -1,473 +1,856 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Домашняя работа №8</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/portfolio.min.css">
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
-
-</head>
-<body>
-        <!--Header-->
-<header class="page-header">
-    <div class="container page-header__container">
+  </head>
+  <body>
+    <!--Header-->
+    <header class="page-header">
+      <div class="container page-header__container">
         <nav class="main-nav">
-            <a href="./index.html" class="logo page-header__logo"> <span class="logo__title">Web</span>Studio
-            </a>
-            <ul class="site-nav">
-                <li class="site-nave__item"><a href="./index.html"
-                        class="site-nave__link">Студия</a></li>
-                <li class="site-nave__item"><a href="./portfolio.html" class="site-nave__link site-nave__link-active">Портфолио</a></li>
-                <li class="site-nave__item"><a href="" class="site-nave__link">Контакты</a></li>
-            </ul>
+          <a href="./index.html" class="logo page-header__logo">
+            <span class="logo__title">Web</span>Studio
+          </a>
+          <ul class="site-nav">
+            <li class="site-nave__item">
+              <a href="./index.html" class="site-nave__link">Студия</a>
+            </li>
+            <li class="site-nave__item">
+              <a href="./portfolio.html" class="site-nave__link site-nave__link-active"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nave__item"><a href="" class="site-nave__link">Контакты</a></li>
+          </ul>
         </nav>
         <button type="button" class="page-header__button_open" data-menu-open>
-            <svg width="40" height="40">
-                <use href="./images/symbol-defs.svg#menu-open"></use>
-            </svg>
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#menu-open"></use>
+          </svg>
         </button>
         <ul class="site-contacts">
-            <li class="site-contacts__item">
-                <a href="mailto:info@devstudio.com" class="site-contacts__link">
-                    <svg class="site-contacts__icon" width="16" height="12">
-                        <use href="./images/symbol-defs.svg#mail"></use>
-                    </svg>info@devstudio.com</a>
-            </li>
-            <li class="site-contacts__item"><a href="tel:+380961111111" class="site-contacts__link">
-                    <svg class="site-contacts__icon" width="10" height="16">
-                        <use href="./images/symbol-defs.svg#phone"></use>
-                    </svg>+38 096 111 11 11</a></li>
+          <li class="site-contacts__item">
+            <a href="mailto:info@devstudio.com" class="site-contacts__link">
+              <svg class="site-contacts__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#mail"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="site-contacts__item">
+            <a href="tel:+380961111111" class="site-contacts__link">
+              <svg class="site-contacts__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#phone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-    </div>
-    <div class="mobile-menu" data-menu>
+      </div>
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
-            <button type="button" class="mobile-button__icon--close" data-menu-close>
-                <svg class="button__icon" width="19" height="19">
-                    <use href="./images/symbol-defs.svg#close"></use>
-                </svg>
-            </button>
-            <ul class="mobile-menu__nav-list">
-                <li class="mobile-menu__nav-item">
-                    <a href="./index.html" class="mobile-menu__nav-link">Студия</a>
-                </li>
-                <li class="mobile-menu__nav-item">
-                    <a href="./portfolio.html" class="mobile-menu__nav-link mobile-menu__nav-link--active">Портфолио</a>
-                </li>
-                <li class="mobile-menu__nav-item">
-                    <a href="" class="mobile-menu__nav-link">Контакты</a>
-                </li>
-            </ul>
-            <ul class="mobile-menu__contacts-list">
-                <li class="mobile-menu__contacts-item">
-                    <a href="tel:+380961111111" class="mobile-menu__contacts-link--phone">
-                        +380961111111</a>
-                </li>
-                <li class="mobile-menu__contacts-item"><a href="mailto:info@devstudio.com"
-                        class="mobile-menu__contacts-link--mail">
-                        info@devstudio.com</a>
-            </ul>
-            <ul class="mobile-menu__soc-list">
-                <li class="mobile-menu__soc-item"><a href="#" class="mobile-menu__soc-link">Instagram</a></li>
-                <li class="mobile-menu__soc-item"><a href="#" class="mobile-menu__soc-link">Twitter</a></li>
-                <li class="mobile-menu__soc-item"><a href="#" class="mobile-menu__soc-link">Facebook</a></li>
-                <li class="mobile-menu__soc-item"><a href="#" class="mobile-menu__soc-link">LinkedIn</a></li>
-            </ul>
+          <button type="button" class="mobile-button__icon--close" data-menu-close>
+            <svg class="button__icon" width="19" height="19">
+              <use href="./images/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-item">
+              <a href="./index.html" class="mobile-menu__nav-link">Студия</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="./portfolio.html" class="mobile-menu__nav-link mobile-menu__nav-link--active"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="" class="mobile-menu__nav-link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contacts-list">
+            <li class="mobile-menu__contacts-item">
+              <a href="tel:+380961111111" class="mobile-menu__contacts-link--phone">
+                +380961111111</a
+              >
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link--mail">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__soc-list">
+            <li class="mobile-menu__soc-item">
+              <a href="#" class="mobile-menu__soc-link">Instagram</a>
+            </li>
+            <li class="mobile-menu__soc-item">
+              <a href="#" class="mobile-menu__soc-link">Twitter</a>
+            </li>
+            <li class="mobile-menu__soc-item">
+              <a href="#" class="mobile-menu__soc-link">Facebook</a>
+            </li>
+            <li class="mobile-menu__soc-item">
+              <a href="#" class="mobile-menu__soc-link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</header>
-<main>
-<!--List job-->
-<section class="section">
-    <div class="container">
-        <h1 class="visual-heading">Портфолио</h1>
-    <ul class="button-item">
-        <li><button class="button active-button" type="button">Все</button></li>
-        <li><button class="button" type="button">Веб-сайты</button></li>
-        <li><button class="button" type="button">Приложения</button></li>
-        <li><button class="button" type="button">Дизайн</button></li>
-        <li><button class="button" type="button">Маркетинг</button></li>
-    </ul>
-    <ul class="page-job">
-        <li class="page-job__item">
-            <a href="#" class="page-job__link"><div class="page-job__img">
-                <picture>
-                    <source srcset="././images/portfolio/company1/desctop/portfolio-1-lg.webp 1x, ././images/portfolio/company1/desctop/portfolio-1-lg@2x.webp 2x"
-                        media="(min-width: 1200px)"
-                        type="image/webp">
-                    <source srcset="././images/portfolio/company1/desctop/portfolio-1-lg.jpg 1x, ././images/portfolio/company1/desctop/portfolio-1-lg@2x.jpg 2x"
-                    media="(min-width: 1200px)">
+      </div>
+    </header>
+    <main>
+      <!--List job-->
+      <section class="section">
+        <div class="container">
+          <h1 class="visual-heading">Портфолио</h1>
+          <ul class="button-item">
+            <li><button class="button active-button" type="button">Все</button></li>
+            <li><button class="button" type="button">Веб-сайты</button></li>
+            <li><button class="button" type="button">Приложения</button></li>
+            <li><button class="button" type="button">Дизайн</button></li>
+            <li><button class="button" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="page-job">
+            <li class="page-job__item">
+              <a href="#" class="page-job__link"
+                ><div class="page-job__img">
+                  <picture>
+                    <source
+                      srcset="
+                        ././images/portfolio/company1/desctop/portfolio-1-lg.webp    1x,
+                        ././images/portfolio/company1/desctop/portfolio-1-lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company1/desctop/portfolio-1-lg.jpg    1x,
+                        ././images/portfolio/company1/desctop/portfolio-1-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
 
-                    <source srcset="././images/portfolio/company1/tablet/portfolio-1-md.webp 1x, ././images/portfolio/company1/tablet/portfolio-1-md@2x.webp 2x"
-                        media="(min-width: 768px)"
-                        type="image/webp">
-                    <source srcset="././images/portfolio/company1/tablet/portfolio-1-md.jpg 1x, ././images/portfolio/company1/tablet/portfolio-1-md@2x.jpg 2x"
-                    media="(min-width: 768px)">
+                    <source
+                      srcset="
+                        ././images/portfolio/company1/tablet/portfolio-1-md.webp    1x,
+                        ././images/portfolio/company1/tablet/portfolio-1-md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company1/tablet/portfolio-1-md.jpg    1x,
+                        ././images/portfolio/company1/tablet/portfolio-1-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
 
-                    <source srcset="././images/portfolio/company1/mobile/portfolio-1-sm.webp 1x, ././images/portfolio/company1/mobile/portfolio-1-sm@2x.webp 2x"
-                        media="(max-width: 767px)"
-                        type="image/webp">
                     <source
-                    srcset="././images/portfolio/company1/mobile/portfolio-1-sm.jpg 1x, ././images/portfolio/company1/mobile/portfolio-1-sm@2x.jpg 2x"
-                    media="(max-width: 767px)">
+                      srcset="
+                        ././images/portfolio/company1/mobile/portfolio-1-sm.webp    1x,
+                        ././images/portfolio/company1/mobile/portfolio-1-sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company1/mobile/portfolio-1-sm.jpg    1x,
+                        ././images/portfolio/company1/mobile/portfolio-1-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
 
-                    <img src="././images/portfolio/company1/mobile/portfolio-1-sm.jpg" alt="Макбук">
-                </picture>
-                <div class="page-job__overlay"><p class="page-job__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-            исчерпывающие сведения о компании или частном лице.</p></div></div>
-            <div class="page-job__container">
-                <h3 class="page-job__title">Технокряк</h3>
-                <p class="page-job__deckription">Веб-сайт</p>
-            </div>
-            </a>
-        </li>
-        <li class="page-job__item">
-            <a href="#" class="page-job__link"><div class="page-job__img">
-                <picture>
-                    <source srcset="././images/portfolio/company2/desctop/portfolio-2-lg.webp 1x, ././images/portfolio/company2/desctop/portfolio-2-lg@2x.webp 2x"
-                        media="(min-width: 1200px)"
-                        type="image/webp">
-                    <source srcset="././images/portfolio/company2/desctop/portfolio-2-lg.jpg 1x, ././images/portfolio/company2/desctop/portfolio-2-lg@2x.jpg 2x"
-                    media="(min-width: 1200px)">
+                    <img
+                      src="././images/portfolio/company1/mobile/portfolio-1-sm.jpg"
+                      alt="Макбук"
+                    />
+                  </picture>
+                  <div class="page-job__overlay">
+                    <p class="page-job__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="page-job__container">
+                  <h3 class="page-job__title">Технокряк</h3>
+                  <p class="page-job__deckription">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="page-job__item">
+              <a href="#" class="page-job__link"
+                ><div class="page-job__img">
+                  <picture>
+                    <source
+                      srcset="
+                        ././images/portfolio/company2/desctop/portfolio-2-lg.webp    1x,
+                        ././images/portfolio/company2/desctop/portfolio-2-lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company2/desctop/portfolio-2-lg.jpg    1x,
+                        ././images/portfolio/company2/desctop/portfolio-2-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
 
-                    <source srcset="././images/portfolio/company2/tablet/portfolio-2-md.webp 1x, ././images/portfolio/company2/tablet/portfolio-2-md@2x.webp 2x"
-                        media="(min-width: 768px)"
-                        type="image/webp">
-                    <source srcset="././images/portfolio/company2/tablet/portfolio-2-md.jpg 1x, ././images/portfolio/company2/tablet/portfolio-2-md@2x.jpg 2x"
-                    media="(min-width: 768px)">
+                    <source
+                      srcset="
+                        ././images/portfolio/company2/tablet/portfolio-2-md.webp    1x,
+                        ././images/portfolio/company2/tablet/portfolio-2-md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company2/tablet/portfolio-2-md.jpg    1x,
+                        ././images/portfolio/company2/tablet/portfolio-2-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
 
-                    <source srcset="././images/portfolio/company2/mobile/portfolio-2-sm.webp 1x, ././images/portfolio/company2/mobile/portfolio-2-sm@2x.webp 2x"
-                        media="(max-width: 767px)"
-                        type="image/webp">
                     <source
-                    srcset="././images/portfolio/company2/mobile/portfolio-2-sm.jpg 1x, ././images/portfolio/company2/mobile/portfolio-2-sm@2x.jpg 2x"
-                    media="(max-width: 767px)">
+                      srcset="
+                        ././images/portfolio/company2/mobile/portfolio-2-sm.webp    1x,
+                        ././images/portfolio/company2/mobile/portfolio-2-sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company2/mobile/portfolio-2-sm.jpg    1x,
+                        ././images/portfolio/company2/mobile/portfolio-2-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
 
-                    <img src="././images/portfolio/company2/mobile/portfolio-1-sm.jpg" alt="Два баскетболиста с мячом">
-                </picture>
-                <div class="page-job__overlay"><p class="page-job__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-            исчерпывающие сведения о компании или частном лице.</p></div></div>
-            <div class="page-job__container">
-                <h3 class="page-job__title">Постер New Orlean vs Golden Star</h3>
-                <p class="page-job__deckription">Дизайн</p>
-            </div>
-            </a>
-        </li>
-        <li class="page-job__item">
-            <a href="#" class="page-job__link"><div class="page-job__img">
-                <picture>
-                    <source srcset="././images/portfolio/company3/desctop/portfolio-3-lg.webp 1x, ././images/portfolio/company3/desctop/portfolio-3-lg@2x.webp 2x"
-                        media="(min-width: 1200px)"
-                        type="image/webp">
-                    <source srcset="././images/portfolio/company3/desctop/portfolio-3-lg.jpg 1x, ././images/portfolio/company3/desctop/portfolio-3-lg@2x.jpg 2x"
-                    media="(min-width: 1200px)">
+                    <img
+                      src="././images/portfolio/company2/mobile/portfolio-1-sm.jpg"
+                      alt="Два баскетболиста с мячом"
+                    />
+                  </picture>
+                  <div class="page-job__overlay">
+                    <p class="page-job__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="page-job__container">
+                  <h3 class="page-job__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="page-job__deckription">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="page-job__item">
+              <a href="#" class="page-job__link"
+                ><div class="page-job__img">
+                  <picture>
+                    <source
+                      srcset="
+                        ././images/portfolio/company3/desctop/portfolio-3-lg.webp    1x,
+                        ././images/portfolio/company3/desctop/portfolio-3-lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company3/desctop/portfolio-3-lg.jpg    1x,
+                        ././images/portfolio/company3/desctop/portfolio-3-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
 
-                    <source srcset="././images/portfolio/company3/tablet/portfolio-3-md.webp 1x, ././images/portfolio/company3/tablet/portfolio-3-md@2x.webp 2x"
-                        media="(min-width: 768px)"
-                        type="image/webp">
-                    <source srcset="././images/portfolio/company3/tablet/portfolio-3-md.jpg 1x, ././images/portfolio/company3/tablet/portfolio-3-md@2x.jpg 2x"
-                    media="(min-width: 768px)">
+                    <source
+                      srcset="
+                        ././images/portfolio/company3/tablet/portfolio-3-md.webp    1x,
+                        ././images/portfolio/company3/tablet/portfolio-3-md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company3/tablet/portfolio-3-md.jpg    1x,
+                        ././images/portfolio/company3/tablet/portfolio-3-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
 
-                    <source srcset="././images/portfolio/company3/mobile/portfolio-3-sm.webp 1x, ././images/portfolio/company3/mobile/portfolio-3-sm@2x.webp 2x"
-                        media="(max-width: 767px)"
-                        type="image/webp">
                     <source
-                    srcset="././images/portfolio/company3/mobile/portfolio-3-sm.jpg 1x, ././images/portfolio/company3/mobile/portfolio-3-sm@2x.jpg 2x"
-                    media="(max-width: 767px)">
+                      srcset="
+                        ././images/portfolio/company3/mobile/portfolio-3-sm.webp    1x,
+                        ././images/portfolio/company3/mobile/portfolio-3-sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company3/mobile/portfolio-3-sm.jpg    1x,
+                        ././images/portfolio/company3/mobile/portfolio-3-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
 
-                    <img src="././images/portfolio/company3/mobile/portfolio-3-sm.jpg" alt="Рыба с названием ресторана">
-                </picture>
-                <div class="page-job__overlay"><p class="page-job__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-            исчерпывающие сведения о компании или частном лице.</p></div></div>
-            <div class="page-job__container">
-                <h3 class="page-job__title">Ресторан Seafood</h3>
-                <p class="page-job__deckription">Приложение</p>
-            </div>
-            </a>
-        </li>
-        <li class="page-job__item">
-            <a href="#" class="page-job__link"><div class="page-job__img">
-                <picture>
-                    <source srcset="././images/portfolio/company4/desctop/portfolio-4-lg.webp 1x, ././images/portfolio/company4/desctop/portfolio-4-lg@2x.webp 2x"
-                        media="(min-width: 1200px)"
-                        type="image/webp">
-                    <source srcset="././images/portfolio/company4/desctop/portfolio-4-lg.jpg 1x, ././images/portfolio/company4/desctop/portfolio-4-lg@2x.jpg 2x"
-                    media="(min-width: 1200px)">
+                    <img
+                      src="././images/portfolio/company3/mobile/portfolio-3-sm.jpg"
+                      alt="Рыба с названием ресторана"
+                    />
+                  </picture>
+                  <div class="page-job__overlay">
+                    <p class="page-job__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="page-job__container">
+                  <h3 class="page-job__title">Ресторан Seafood</h3>
+                  <p class="page-job__deckription">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="page-job__item">
+              <a href="#" class="page-job__link"
+                ><div class="page-job__img">
+                  <picture>
+                    <source
+                      srcset="
+                        ././images/portfolio/company4/desctop/portfolio-4-lg.webp    1x,
+                        ././images/portfolio/company4/desctop/portfolio-4-lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company4/desctop/portfolio-4-lg.jpg    1x,
+                        ././images/portfolio/company4/desctop/portfolio-4-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
 
-                    <source srcset="././images/portfolio/company4/tablet/portfolio-4-md.webp 1x, ././images/portfolio/company4/tablet/portfolio-4-md@2x.webp 2x"
-                        media="(min-width: 768px)"
-                        type="image/webp">
-                    <source srcset="././images/portfolio/company4/tablet/portfolio-4-md.jpg 1x, ././images/portfolio/company4/tablet/portfolio-4-md@2x.jpg 2x"
-                    media="(min-width: 768px)">
+                    <source
+                      srcset="
+                        ././images/portfolio/company4/tablet/portfolio-4-md.webp    1x,
+                        ././images/portfolio/company4/tablet/portfolio-4-md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company4/tablet/portfolio-4-md.jpg    1x,
+                        ././images/portfolio/company4/tablet/portfolio-4-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
 
-                    <source srcset="././images/portfolio/company4/mobile/portfolio-4-sm.webp 1x, ././images/portfolio/company4/mobile/portfolio-4-sm@2x.webp 2x"
-                        media="(max-width: 767px)"
-                        type="image/webp">
                     <source
-                    srcset="././images/portfolio/company4/mobile/portfolio-4-sm.jpg 1x, ././images/portfolio/company4/mobile/portfolio-4-sm@2x.jpg 2x"
-                    media="(max-width: 767px)">
+                      srcset="
+                        ././images/portfolio/company4/mobile/portfolio-4-sm.webp    1x,
+                        ././images/portfolio/company4/mobile/portfolio-4-sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ././images/portfolio/company4/mobile/portfolio-4-sm.jpg    1x,
+                        ././images/portfolio/company4/mobile/portfolio-4-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
 
-                    <img src="././images/portfolio/company4/mobile/portfolio-4-sm.jpg" alt="Наушники">
-                </picture>
-                <div class="page-job__overlay"><p class="page-job__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-            исчерпывающие сведения о компании или частном лице.</p></div></div>
-            <div class="page-job__container">
-                <h3 class="page-job__title">Проект Prime</h3>
-                <p class="page-job__deckription">Маркетинг</p>
-            </div>
-            </a>
-        </li>
-        <li class="page-job__item">
-            <a href="#" class="page-job__link"><div class="page-job__img">
-                <picture>
+                    <img
+                      src="././images/portfolio/company4/mobile/portfolio-4-sm.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
+                  <div class="page-job__overlay">
+                    <p class="page-job__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="page-job__container">
+                  <h3 class="page-job__title">Проект Prime</h3>
+                  <p class="page-job__deckription">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="page-job__item">
+              <a href="#" class="page-job__link"
+                ><div class="page-job__img">
+                  <picture>
                     <source
-                        srcset="././images/portfolio/company5/desctop/portfolio-5-lg.webp 1x, ././images/portfolio/company5/desctop/portfolio-5-lg@2x.webp 2x"
-                        media="(min-width: 1200px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company5/desctop/portfolio-5-lg.webp    1x,
+                        ././images/portfolio/company5/desctop/portfolio-5-lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company5/desctop/portfolio-5-lg.jpg 1x, ././images/portfolio/company5/desctop/portfolio-5-lg@2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                
+                      srcset="
+                        ././images/portfolio/company5/desctop/portfolio-5-lg.jpg    1x,
+                        ././images/portfolio/company5/desctop/portfolio-5-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
                     <source
-                        srcset="././images/portfolio/company5/tablet/portfolio-5-md.webp 1x, ././images/portfolio/company5/tablet/portfolio-5-md@2x.webp 2x"
-                        media="(min-width: 768px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company5/tablet/portfolio-5-md.webp    1x,
+                        ././images/portfolio/company5/tablet/portfolio-5-md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company5/tablet/portfolio-5-md.jpg 1x, ././images/portfolio/company5/tablet/portfolio-5-md@2x.jpg 2x"
-                        media="(min-width: 768px)">
-                
+                      srcset="
+                        ././images/portfolio/company5/tablet/portfolio-5-md.jpg    1x,
+                        ././images/portfolio/company5/tablet/portfolio-5-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
                     <source
-                        srcset="././images/portfolio/company5/mobile/portfolio-5-sm.webp 1x, ././images/portfolio/company5/mobile/portfolio-5-sm@2x.webp 2x"
-                        media="(max-width: 767px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company5/mobile/portfolio-5-sm.webp    1x,
+                        ././images/portfolio/company5/mobile/portfolio-5-sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company5/mobile/portfolio-5-sm.jpg 1x, ././images/portfolio/company5/mobile/portfolio-5-sm@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                
-                    <img src="././images/portfolio/company5/mobile/portfolio-5-sm.jpg" alt="Две коробки">
-                </picture>
-                <div class="page-job__overlay"><p class="page-job__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-            исчерпывающие сведения о компании или частном лице.</p></div></div>
-            <div class="page-job__container">
-                <h3 class="page-job__title">Проект Boxes</h3>
-                <p class="page-job__deckription">Приложение</p>
-            </div>
-            </a>
-        </li>
-        <li class="page-job__item">
-            <a href="#" class="page-job__link"><div class="page-job__img">
-                <picture>
+                      srcset="
+                        ././images/portfolio/company5/mobile/portfolio-5-sm.jpg    1x,
+                        ././images/portfolio/company5/mobile/portfolio-5-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="././images/portfolio/company5/mobile/portfolio-5-sm.jpg"
+                      alt="Две коробки"
+                    />
+                  </picture>
+                  <div class="page-job__overlay">
+                    <p class="page-job__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="page-job__container">
+                  <h3 class="page-job__title">Проект Boxes</h3>
+                  <p class="page-job__deckription">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="page-job__item">
+              <a href="#" class="page-job__link"
+                ><div class="page-job__img">
+                  <picture>
                     <source
-                        srcset="././images/portfolio/company6/desctop/portfolio-6-lg.webp 1x, ././images/portfolio/company6/desctop/portfolio-6-lg@2x.webp 2x"
-                        media="(min-width: 1200px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company6/desctop/portfolio-6-lg.webp    1x,
+                        ././images/portfolio/company6/desctop/portfolio-6-lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company6/desctop/portfolio-6-lg.jpg 1x, ././images/portfolio/company6/desctop/portfolio-6-lg@2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                
+                      srcset="
+                        ././images/portfolio/company6/desctop/portfolio-6-lg.jpg    1x,
+                        ././images/portfolio/company6/desctop/portfolio-6-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
                     <source
-                        srcset="././images/portfolio/company6/tablet/portfolio-6-md.webp 1x, ././images/portfolio/company6/tablet/portfolio-6-md@2x.webp 2x"
-                        media="(min-width: 768px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company6/tablet/portfolio-6-md.webp    1x,
+                        ././images/portfolio/company6/tablet/portfolio-6-md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company6/tablet/portfolio-6-md.jpg 1x, ././images/portfolio/company6/tablet/portfolio-6-md@2x.jpg 2x"
-                        media="(min-width: 768px)">
-                
+                      srcset="
+                        ././images/portfolio/company6/tablet/portfolio-6-md.jpg    1x,
+                        ././images/portfolio/company6/tablet/portfolio-6-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
                     <source
-                        srcset="././images/portfolio/company6/mobile/portfolio-6-sm.webp 1x, ././images/portfolio/company6/mobile/portfolio-6-sm@2x.webp 2x"
-                        media="(max-width: 767px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company6/mobile/portfolio-6-sm.webp    1x,
+                        ././images/portfolio/company6/mobile/portfolio-6-sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company6/mobile/portfolio-6-sm.jpg 1x, ././images/portfolio/company6/mobile/portfolio-6-sm@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                
-                    <img src="././images/portfolio/company6/mobile/portfolio-6-sm.jpg" alt="Экран компьютера">
-                </picture>
-                <div class="page-job__overlay"><p class="page-job__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-            исчерпывающие сведения о компании или частном лице.</p></div></div>
-            <div class="page-job__container">
-                <h3 class="page-job__title">Inspiration has no Borders</h3>
-                <p class="page-job__deckription">Веб-сайт</p>
-            </div>
-            </a>
-        </li>
-        <li class="page-job__item">
-            <a href="#" class="page-job__link"><div class="page-job__img">
-                <picture>
+                      srcset="
+                        ././images/portfolio/company6/mobile/portfolio-6-sm.jpg    1x,
+                        ././images/portfolio/company6/mobile/portfolio-6-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="././images/portfolio/company6/mobile/portfolio-6-sm.jpg"
+                      alt="Экран компьютера"
+                    />
+                  </picture>
+                  <div class="page-job__overlay">
+                    <p class="page-job__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="page-job__container">
+                  <h3 class="page-job__title">Inspiration has no Borders</h3>
+                  <p class="page-job__deckription">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="page-job__item">
+              <a href="#" class="page-job__link"
+                ><div class="page-job__img">
+                  <picture>
                     <source
-                        srcset="././images/portfolio/company7/desctop/portfolio-7-lg.webp 1x, ././images/portfolio/company7/desctop/portfolio-7-lg@2x.webp 2x"
-                        media="(min-width: 1200px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company7/desctop/portfolio-7-lg.webp    1x,
+                        ././images/portfolio/company7/desctop/portfolio-7-lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company7/desctop/portfolio-7-lg.jpg 1x, ././images/portfolio/company7/desctop/portfolio-7-lg@2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                
+                      srcset="
+                        ././images/portfolio/company7/desctop/portfolio-7-lg.jpg    1x,
+                        ././images/portfolio/company7/desctop/portfolio-7-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
                     <source
-                        srcset="././images/portfolio/company7/tablet/portfolio-7-md.webp 1x, ././images/portfolio/company7/tablet/portfolio-7-md@2x.webp 2x"
-                        media="(min-width: 768px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company7/tablet/portfolio-7-md.webp    1x,
+                        ././images/portfolio/company7/tablet/portfolio-7-md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company7/tablet/portfolio-7-md.jpg 1x, ././images/portfolio/company7/tablet/portfolio-7-md@2x.jpg 2x"
-                        media="(min-width: 768px)">
-                
+                      srcset="
+                        ././images/portfolio/company7/tablet/portfolio-7-md.jpg    1x,
+                        ././images/portfolio/company7/tablet/portfolio-7-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
                     <source
-                        srcset="././images/portfolio/company7/mobile/portfolio-7-sm.webp 1x, ././images/portfolio/company7/mobile/portfolio-7-sm@2x.webp 2x"
-                        media="(max-width: 767px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company7/mobile/portfolio-7-sm.webp    1x,
+                        ././images/portfolio/company7/mobile/portfolio-7-sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company7/mobile/portfolio-7-sm.jpg 1x, ././images/portfolio/company7/mobile/portfolio-7-sm@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                
-                    <img src="././images/portfolio/company7/mobile/portfolio-7-sm.jpg" alt="Развернутая книга">
-                </picture>
-                <div class="page-job__overlay"><p class="page-job__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-            исчерпывающие сведения о компании или частном лице.</p></div></div>
-            <div class="page-job__container">
-                <h3 class="page-job__title">Издание Limited Edition</h3>
-                <p class="page-job__deckription">Дизайн</p>
-            </div>
-            </a>
-        </li>
-        <li class="page-job__item">
-            <a href="#" class="page-job__link"><div class="page-job__img">
-                <picture>
+                      srcset="
+                        ././images/portfolio/company7/mobile/portfolio-7-sm.jpg    1x,
+                        ././images/portfolio/company7/mobile/portfolio-7-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="././images/portfolio/company7/mobile/portfolio-7-sm.jpg"
+                      alt="Развернутая книга"
+                    />
+                  </picture>
+                  <div class="page-job__overlay">
+                    <p class="page-job__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="page-job__container">
+                  <h3 class="page-job__title">Издание Limited Edition</h3>
+                  <p class="page-job__deckription">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="page-job__item">
+              <a href="#" class="page-job__link"
+                ><div class="page-job__img">
+                  <picture>
                     <source
-                        srcset="././images/portfolio/company8/desctop/portfolio-8-lg.webp 1x, ././images/portfolio/company8/desctop/portfolio-8-lg@2x.webp 2x"
-                        media="(min-width: 1200px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company8/desctop/portfolio-8-lg.webp    1x,
+                        ././images/portfolio/company8/desctop/portfolio-8-lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company8/desctop/portfolio-8-lg.jpg 1x, ././images/portfolio/company8/desctop/portfolio-8-lg@2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                
+                      srcset="
+                        ././images/portfolio/company8/desctop/portfolio-8-lg.jpg    1x,
+                        ././images/portfolio/company8/desctop/portfolio-8-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
                     <source
-                        srcset="././images/portfolio/company8/tablet/portfolio-8-md.webp 1x, ././images/portfolio/company8/tablet/portfolio-8-md@2x.webp 2x"
-                        media="(min-width: 768px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company8/tablet/portfolio-8-md.webp    1x,
+                        ././images/portfolio/company8/tablet/portfolio-8-md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company8/tablet/portfolio-8-md.jpg 1x, ././images/portfolio/company8/tablet/portfolio-8-md@2x.jpg 2x"
-                        media="(min-width: 768px)">
-                
+                      srcset="
+                        ././images/portfolio/company8/tablet/portfolio-8-md.jpg    1x,
+                        ././images/portfolio/company8/tablet/portfolio-8-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
                     <source
-                        srcset="././images/portfolio/company8/mobile/portfolio-8-sm.webp 1x, ././images/portfolio/company8/mobile/portfolio-8-sm@2x.webp 2x"
-                        media="(max-width: 767px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company8/mobile/portfolio-8-sm.webp    1x,
+                        ././images/portfolio/company8/mobile/portfolio-8-sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company8/mobile/portfolio-8-sm.jpg 1x, ././images/portfolio/company8/mobile/portfolio-8-sm@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                
-                    <img src="././images/portfolio/company8/mobile/portfolio-8-sm.jpg" alt="Этикетка с названием проекта">
-                </picture>
-                <div class="page-job__overlay"><p class="page-job__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-            исчерпывающие сведения о компании или частном лице.</p></div></div>
-            <div class="page-job__container">
-                <h3 class="page-job__title">Проект LAB</h3>
-                <p class="page-job__deckription">Маркетинг</p>
-            </div>
-            </a>
-        </li>
-        <li class="page-job__item">
-            <a href="#" class="page-job__link"><div class="page-job__img">
-                <picture>
+                      srcset="
+                        ././images/portfolio/company8/mobile/portfolio-8-sm.jpg    1x,
+                        ././images/portfolio/company8/mobile/portfolio-8-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="././images/portfolio/company8/mobile/portfolio-8-sm.jpg"
+                      alt="Этикетка с названием проекта"
+                    />
+                  </picture>
+                  <div class="page-job__overlay">
+                    <p class="page-job__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="page-job__container">
+                  <h3 class="page-job__title">Проект LAB</h3>
+                  <p class="page-job__deckription">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="page-job__item">
+              <a href="#" class="page-job__link"
+                ><div class="page-job__img">
+                  <picture>
                     <source
-                        srcset="././images/portfolio/company9/desctop/portfolio-9-lg.webp 1x, ././images/portfolio/company9/desctop/portfolio-9-lg@2x.webp 2x"
-                        media="(min-width: 1200px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company9/desctop/portfolio-9-lg.webp    1x,
+                        ././images/portfolio/company9/desctop/portfolio-9-lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company9/desctop/portfolio-9-lg.jpg 1x, ././images/portfolio/company9/desctop/portfolio-9-lg@2x.jpg 2x"
-                        media="(min-width: 1200px)">
-                
+                      srcset="
+                        ././images/portfolio/company9/desctop/portfolio-9-lg.jpg    1x,
+                        ././images/portfolio/company9/desctop/portfolio-9-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
                     <source
-                        srcset="././images/portfolio/company9/tablet/portfolio-9-md.webp 1x, ././images/portfolio/company9/tablet/portfolio-9-md@2x.webp 2x"
-                        media="(min-width: 768px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company9/tablet/portfolio-9-md.webp    1x,
+                        ././images/portfolio/company9/tablet/portfolio-9-md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company9/tablet/portfolio-9-md.jpg 1x, ././images/portfolio/company9/tablet/portfolio-9-md@2x.jpg 2x"
-                        media="(min-width: 768px)">
-                
+                      srcset="
+                        ././images/portfolio/company9/tablet/portfolio-9-md.jpg    1x,
+                        ././images/portfolio/company9/tablet/portfolio-9-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
                     <source
-                        srcset="././images/portfolio/company9/mobile/portfolio-9-sm.webp 1x, ././images/portfolio/company9/mobile/portfolio-9-sm@2x.webp 2x"
-                        media="(max-width: 767px)" type="image/webp">
+                      srcset="
+                        ././images/portfolio/company9/mobile/portfolio-9-sm.webp    1x,
+                        ././images/portfolio/company9/mobile/portfolio-9-sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
                     <source
-                        srcset="././images/portfolio/company9/mobile/portfolio-9-sm.jpg 1x, ././images/portfolio/company9/mobile/portfolio-9-sm@2x.jpg 2x"
-                        media="(max-width: 767px)">
-                
-                    <img src="././images/portfolio/company9/mobile/portfolio-9-sm.jpg" alt="Макбук с руками">
-                </picture>
-                <div class="page-job__overlay"><p class="page-job__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-            исчерпывающие сведения о компании или частном лице.</p></div></div>
-            <div class="page-job__container">
-                <h3 class="page-job__title">Growing Business</h3>
-                <p class="page-job__deckription">Приложение</p>
-            </div>
-            </a>
-        </li>
-    </ul> 
-    </div> 
-</section>     
-</main>
-<!--Footer-->
-<footer class="footer">
-    <div class="container">
+                      srcset="
+                        ././images/portfolio/company9/mobile/portfolio-9-sm.jpg    1x,
+                        ././images/portfolio/company9/mobile/portfolio-9-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="././images/portfolio/company9/mobile/portfolio-9-sm.jpg"
+                      alt="Макбук с руками"
+                    />
+                  </picture>
+                  <div class="page-job__overlay">
+                    <p class="page-job__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="page-job__container">
+                  <h3 class="page-job__title">Growing Business</h3>
+                  <p class="page-job__deckription">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
         <div class="footer-container">
-            <div>
-                <a href="./index.html" class="logo footer-logo"><span class="logo__title">Web</span>Studio
+          <div>
+            <a href="./index.html" class="logo footer-logo"
+              ><span class="logo__title">Web</span>Studio
+            </a>
+            <address class="footer-adress">
+              <ul>
+                <li class="footer-adress__item">
+                  <a
+                    href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                    class="footer-adress__map"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-adress__item">
+                  <a href="mailto:info@devstudio.com" class="footer-adress__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-adress__item">
+                  <a href="tel:+380961111111" class="footer-adress__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social">
+            <h3 class="footer-social__title">присоединяйтесь</h3>
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#instagram"></use>
+                  </svg>
                 </a>
-                <address class="footer-adress">
-                    <ul>
-                        <li class="footer-adress__item"><a href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
-                                class="footer-adress__map" target="_blank" rel="noopener nofollow noreferrer">г. Киев,
-                                пр-т Леси Украинки, 26</a></li>
-                        <li class="footer-adress__item"><a href="mailto:info@devstudio.com"
-                                class="footer-adress__link">info@devstudio.com</a></li>
-                        <li class="footer-adress__item"><a href="tel:+380961111111" class="footer-adress__link">+38 096
-                                111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-            <div class="footer-social">
-                <h3 class="footer-social__title">присоединяйтесь</h3>
-                <ul class="footer-social__list">
-                    <li class="footer-social__item">
-                        <a href="#" class="footer-social__link">
-                            <svg width="20" height="20">
-                                <use href="./images/symbol-defs.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social__item">
-                        <a href="#" class="footer-social__link">
-                            <svg width="20" height="20">
-                                <use href="./images/symbol-defs.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social__item">
-                        <a href="#" class="footer-social__link">
-                            <svg width="20" height="20">
-                                <use href="./images/symbol-defs.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social__item">
-                        <a href="#" class="footer-social__link">
-                            <svg width="20" height="20">
-                                <use href="./images/symbol-defs.svg#linkedIn"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#linkedIn"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- <div class="form-container"> -->
         <form class="form-container__footer">
-            <div class="form-field">
-                <label for="mail" class="footer-social__title">Подпишитесь на рассылку</label>
-                <input type="email" class="form-field__input" name="mail" id="mail" placeholder="E-mail">
-            </div>
-            <button type="submit" class="modal-button">Подписаться<svg class="modal-button__icon" width="24"
-                    height="24">
-                    <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-            </button>
+          <div class="form-field">
+            <label for="mail" class="footer-social__title">Подпишитесь на рассылку</label>
+            <input
+              type="email"
+              class="form-field__input"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+            />
+          </div>
+          <button type="submit" class="modal-button">
+            Подписаться<svg class="modal-button__icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </button>
         </form>
         <!-- </div> -->
-    </div>
-</footer>
-<script src="./js/mobile-menu.js"></script>
-</body>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
 </html>
